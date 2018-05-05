@@ -12,6 +12,8 @@ const setup = () => {
 describe('Hello', () => {
   it('should render 9 boxes', () => {
     const output = setup()
-    expect(output.props.children.length).toBe(9)
+    const [ , boxes ] = output.props.children
+
+    expect(boxes.props.children.length).toBe(9)
   })
 })
