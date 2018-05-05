@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { createRenderer } from 'react-test-renderer/shallow'
-import HelloWorld from '../src/HelloWorld'
+import App from '../src/App'
 
 const setup = () => {
   const renderer = createRenderer()
-  renderer.render(<HelloWorld />)
+  renderer.render(<App />)
   const output = renderer.getRenderOutput()
   return output
 }
