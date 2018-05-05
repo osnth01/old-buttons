@@ -1,6 +1,22 @@
 import * as React from 'react'
 import './App.css'
 
-const App = () => <h1 className="App">Hello World</h1>
+import Box from './Box'
+
+const App = () => {
+  return (
+    <div>
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+      <Box />
+    </div>
+  )
+}
 
 export default App
