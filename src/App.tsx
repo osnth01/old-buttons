@@ -5,16 +5,19 @@ import Box from './Box'
 
 const App = () => {
   return (
-    <div>
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
-      <Box />
+    <div className="App">
+      <h1>Old Buttons</h1>
+      <div className="wrapper">
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+        <Box />
+      </div>
     </div>
   )
 }
