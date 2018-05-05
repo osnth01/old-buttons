@@ -4,6 +4,7 @@ import Box from '../src/Box'
 
 const setup = () => {
   const props = {
+    active: false,
     onClick: jest.fn()
   }
 

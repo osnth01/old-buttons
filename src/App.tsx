@@ -37,7 +37,8 @@ class App extends Component<object, State> {
             return (
               <Box
                 key={box.id}
-                onClick={this.handleClick}
+                onClick={() => this.handleClick2(box.id)}
+                active={box.active}
               />
             )
           })}
@@ -46,9 +47,21 @@ class App extends Component<object, State> {
     )
   }
 
-  private handleClick = (e: MouseEvent<HTMLElement>) => {
-    const boxes = this.state.boxes;
-    console.log('I have been clicked!')
+  private handleClick2 = (e: number) => {
+    const boxes = this.state.boxes
+
+    const newBoxes = boxes.map(box => {
+      if (box.id === e) {
+        box.active = true
+      } else {
+        box.active = false
+      }
+      return box
+    })
+
+    this.setState({
+      boxes: newBoxes
+    })
   }
 }
 
